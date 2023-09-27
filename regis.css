@@ -1,0 +1,59 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section headings */
+h2 {
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* User container */
+.user-container {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 20px;
+    background-color: #e8f5e1;
+    border-radius: 6px;
+}
+
+/* User profile */
+.user {
+    text-align: center;
+}
+
+/* User image */
+.user img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+/* User name */
+.user h3 {
+    font-size: 1.2rem;
+}
+
+/* User email and role */
+.user p {
+    color: #777;
+}

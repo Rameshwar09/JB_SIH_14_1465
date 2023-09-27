@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Tech Departments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .department {
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .department:hover {
+            background-color: #e0e0e0;
+        }
+
+        .department h2 {
+            margin: 0;
+            display: inline;
+        }
+
+        .sub-departments {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .sub-department {
+            margin: 5px 0;
+        }
+
+        .sub-department label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .college {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.college img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.college-info {
+    flex-grow: 1;
+}
+
+.college-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.college-ranking {
+    font-size: 16px;
+    color: #666;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="department" onclick="toggleSubDepartments('cse')">
+        <h2>Engineering</h2>
+        <div class="sub-departments" id="cse">
+            <div class="sub-department">
+                
+                <div id="main-content">
+                    <div class="college">
+                        <img src="jntuh.png" alt="College 1">
+                        <div class="college-info">
+                            <div class="college-name">JNTUH</div>
+                            <div class="college-ranking">Rank: 1</div>
+                        </div>
+                    </div>
+                    <div class="college">
+                        <img src="college2.jpg" alt="College 2">
+                        <div class="college-info">
+                            <div class="college-name">College Name 2</div>
+                            <div class="college-ranking">Rank: 2</div>
+                        </div>
+                    </div>
+                    <!-- Add more colleges as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="department" onclick="toggleSubDepartments('it')">
+        <h2>Degree</h2>
+        <div class="sub-departments" id="it">
+            <div class="sub-department">
+                <ul>
+                    <li><a href="#">IT-A</a></li>
+                </ul>
+            </div>
+            <div class="sub-department">
+                <ul>
+                    <li><a href="#">IT-B</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="department" onclick="toggleSubDepartments('eee')">
+        <h2>Deploma</h2>
+        <div class="sub-departments" id="eee">
+            <div class="sub-department">
+                <ul>
+                    <li><a href="#">EEE-A</a></li>
+                </ul>
+            </div>
+            <div class="sub-department">
+                <ul>
+                    <li><a href="#">EEE-B</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="department" onclick="toggleSubDepartments('ece')">
+        <h2>Post Graduation</h2>
+        <div class="sub-departments" id="ece">
+            <div class="sub-department">
+                <ul>
+                    <li><a href="#">ECE-A</a></li>
+                </ul>
+            </div>
+            <div class="sub-department">
+                <ul>
+                    <li><a href="#">ECE-B</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script>
+        function toggleSubDepartments(id) {
+            const subDepartments = document.getElementById(id);
+            subDepartments.style.display = subDepartments.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

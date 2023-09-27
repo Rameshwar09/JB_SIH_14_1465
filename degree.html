@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #2858de;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(20, 110, 245, 0.1);
+            border-radius: 5px;
+        }
+        .container h2{
+            text-align: center;
+        }
+
+        .course {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 5px;
+            background-color: #e8f5e1;
+        }
+
+        .sub-course {
+            background-color: #f0f0f0;
+            padding: 5px;
+            margin-left: 20px;
+            border-radius: 8px;
+            margin: 20px;
+            border: 2px solid gray;
+        }
+
+        .add-sub-course {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+
+        .add-sub-course:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Courses</h1>
+    </header>
+    <div class="container">
+        <h2>Engineering</h2>
+        <div class="course">
+            <h3>Computer Science Engineering</h3>
+            <!-- <button class="add-sub-course">Add Sub-Course</button> -->
+            <div class="sub-course">
+                <p><input type="checkbox">machine learning</p>
+            </div>
+            <div class="sub-course">
+                <p><input type="checkbox">cyber security</p>
+            </div>
+            <div class="sub-course">
+                <p><input type="checkbox">internet of things</p>
+            </div>
+            <div class="sub-course">
+                <p><input type="checkbox">data science</p>
+            </div>
+        </div>
+
+        <div class="course">
+            <h3>Electronic Communication Engineering</h3>
+            <!-- <button class="add-sub-course">Add Sub-Course</button> -->
+            <div class="sub-course">
+                <p><input type="checkbox">Internet of Things</p>
+            </div>
+            <div class="sub-course">
+                <p><input type="checkbox">Telecommunication Systems</p>
+            </div>
+            <div class="sub-course">
+                <p><input type="checkbox">Microelectronics and VLSI Design</p>
+            </div>
+            <div class="sub-course">
+                <p><input type="checkbox">Satellite Communication</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

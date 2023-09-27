@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaboration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #187af1;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container1 {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .container {
+    display: flex; /* Use flexbox for layout */
+}
+
+/* Styling for the left sidebar */
+.sidebar-left {
+    flex: 1; /* Occupy 1/3 of the container */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Styling for the right sidebar */
+.sidebar-right {
+    flex: 1; /* Occupy 1/3 of the container */
+    background-color: #777;
+    color: #fff;
+    padding: 20px;
+}
+
+        .collaboration-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        .collaboration-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .collaboration-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Style for University Collaboration */
+        .university-container {
+            background-color: #e8f5e1;
+        }
+
+        /* Style for Industry Collaboration */
+        .industry-container {
+            background-color: #e8f5e1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Collaboration & Feedback</h1>
+    </header>
+    <div class="container1">
+        <section class="collaboration-container university-container">
+            
+            <div class="container">
+                <div class="sidebar sidebar-left">
+                    <!-- Left Sidebar Content -->
+                    <h2>University Collaboration</h2>
+                    <ul class="collaboration-list">
+                        <li>University 1: Collaborative Project A</li>
+                        <li>University 2: Research Initiative B</li>
+                        <li>University 3: Joint Program C</li>
+                    </ul>
+                </div>
+                <div class="sidebar sidebar-right">
+                    <!-- Right Sidebar Content -->
+                    <h2>Feedback</h2>
+                    <p><textarea name="review" id="review" cols="30" rows="6"></textarea></p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="collaboration-container industry-container">
+            
+            <div class="container">
+                <div class="sidebar sidebar-left">
+                    <!-- Left Sidebar Content -->
+                    <h2>Industry Collaboration</h2>
+                    <ul class="collaboration-list">
+                        <li>University 1: Collaborative Project A</li>
+                        <li>University 2: Research Initiative B</li>
+                        <li>University 3: Joint Program C</li>
+                    </ul>
+                </div>
+                <div class="sidebar sidebar-right">
+                    <!-- Right Sidebar Content -->
+                    <h2>Feedback</h2>
+                    <p><textarea name="review" id="review" cols="30" rows="6"></textarea></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
